@@ -1,0 +1,10 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'homework_1_ocBasics' do
+  pod 'JSONModel'
+  pod 'YYModel'
+  pod 'MJExtension'
+end
+
