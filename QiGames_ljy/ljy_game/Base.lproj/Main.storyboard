@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mUA-lz-CEU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="A71-o9-DjI">
+            <objects>
+                <navigationController id="mUA-lz-CEU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ehb-6u-TmT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mhk-UN-xpz" kind="relationship" relationship="rootViewController" id="Pli-kH-eSA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXV-5c-ZPZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49003" y="-1032"/>
+        </scene>
+        <!--ljy游戏集-->
+        <scene sceneID="729-uW-TJq">
+            <objects>
+                <viewController title="ljy游戏集" id="mhk-UN-xpz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mbj-Hp-XJa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDc-NA-MZE">
+                                <rect key="frame" x="126.5" y="341" width="161" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="你话我猜"/>
+                                <connections>
+                                    <segue destination="E70-Sz-sVc" kind="show" id="jqu-d5-MEV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOM-pV-KBK">
+                                <rect key="frame" x="126.5" y="214" width="161" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="快速运算"/>
+                                <connections>
+                                    <segue destination="LEk-5B-1xj" kind="show" id="qrS-pz-yK2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha2-Rq-cgk">
+                                <rect key="frame" x="166" y="477" width="81" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="备用"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ha2-Rq-cgk" firstAttribute="centerX" secondItem="Mbj-Hp-XJa" secondAttribute="centerX" id="COB-gf-d2E"/>
+                            <constraint firstItem="vOM-pV-KBK" firstAttribute="top" secondItem="Exz-4n-7PI" secondAttribute="top" constant="126" id="IFK-md-x8b"/>
+                            <constraint firstItem="rDc-NA-MZE" firstAttribute="top" secondItem="vOM-pV-KBK" secondAttribute="bottom" constant="67" id="Xcd-9V-giq"/>
+                            <constraint firstItem="ha2-Rq-cgk" firstAttribute="top" secondItem="rDc-NA-MZE" secondAttribute="bottom" constant="67" id="d0N-3v-oAp"/>
+                            <constraint firstItem="vOM-pV-KBK" firstAttribute="centerX" secondItem="Mbj-Hp-XJa" secondAttribute="centerX" id="f8W-L2-vfe"/>
+                            <constraint firstItem="rDc-NA-MZE" firstAttribute="centerX" secondItem="Mbj-Hp-XJa" secondAttribute="centerX" id="m2M-5E-xtw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Exz-4n-7PI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ljy游戏集" id="9w2-Eh-asg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rzE-rX-rNy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-48117" y="-1109"/>
+        </scene>
+        <!--ljy_Calculate-->
+        <scene sceneID="93l-P2-R3R">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ljy_Calculate" id="LEk-5B-1xj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8br-SC-Hqt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CWv-Pn-V5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47475" y="-1173"/>
+        </scene>
+        <!--ljy_Draw-->
+        <scene sceneID="lNF-SM-YRY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ljy_Draw" id="E70-Sz-sVc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KiQ-aD-UR7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4S-Sl-0BA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47475" y="-1064"/>
+        </scene>
+    </scenes>
+</document>
