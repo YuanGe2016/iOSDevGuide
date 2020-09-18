@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-homework_2_feed/Pods-homework_2_feed-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework
+${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework

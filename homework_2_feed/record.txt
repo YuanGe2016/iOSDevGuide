@@ -1,0 +1,9 @@
+1.这次记录不写那么多了吧
+
+2.第一个是以前学习过得代理注入，这回用上了，虽然并没有深层注入，但是我明白了，实际上就是很多的view，需要很多的操作，封装成了协议，让某个上层的vc去实现这些协议，然后把这个vc对象（self）作为其他view的初始化参数来注入。当那些view要运行某个功能时的操作就像 [self.delegate do something]。好处嘛，就是一个VC可以管很多View，而且每个view都可以通过self.delegate来操作，不用通过传递太多对象来完成某些功能。
+
+3.自定义的cell，关键是cellForRowAtIndexPath和heightForRowAtIndexPath这两个函数的重写，前者用来生成cell，后者用来算每个cell的高度。感觉后者有点像view的sizeToFit，也是用来返回一个自身的size。前者创建cell时init各个控价就行，也不必初始化大小位置，把这些操作留到layoutSubviews里进行，但是自定义cell的各个控件布局需要根据具体的model内容去设置，所以给每个cell对象增加了一个model属性。每个cell的layoutSubviews时的self.frame不用再设置，因为heightForRowAtIndexPath已经设好了，当然这个高度也是根据model内容来算的。
+
+4.读取webp图片时，有两个问题，第一是现在iOS系统app默认使用https，想通过http获取资源时，要在info.plist中增加一个App Transport Security Settings控制项。第二是iOS原生接口不支持读取webp图片，开始时使用了SDWebImage库，不过那个函数好像不起作用，然后就再用了YYImage库，可以用。我想SDWebImage应该也可以，不过暂时不知道该用哪些方法。
+
+5.还有些没做的：首页顶部的搜索栏、滑块选项栏、每个cell都有的一小节灰色分栏。先不做了，以后看回来再说。

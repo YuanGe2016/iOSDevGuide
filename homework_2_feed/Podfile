@@ -1,0 +1,10 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'homework_2_feed' do
+  pod 'YYModel'
+  pod 'SDWebImage', '~> 5.0'
+  pod 'YYImage/WebP'
+end
+
